@@ -1,6 +1,3 @@
-## Cortecx-Public
-The public repository for the python Cortecx NLP Library as available via pip install
-
 # Cortecx
 
 Cortecx is a Python NLP library facilitating the implementation of common NLP tasks.
