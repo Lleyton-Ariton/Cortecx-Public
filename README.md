@@ -36,7 +36,7 @@ answer = parser('YOUR TEXT')
 
 ## Example Output
 
-# Cortecx returns the processed text according to your params in easy to read and key JSON format:
+Cortecx returns the processed text according to your params in easy to read and key JSON format:
 
 Example:
 ```python
