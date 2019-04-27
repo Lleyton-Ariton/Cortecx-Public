@@ -22,10 +22,10 @@ For Models:
 ## Usage
 
 ```python
-import cortecx.constrcution.session as session
-from cortecx.constrcution.materials import Parser
+import cortecx.construction.cxsession as cxsession
+from cortecx.construction.materials import Parser
 
-session.Session().start()
+cxsession.Session().start()
 
 parser = Parser()
 parser.include('YOUR PARAMS') # See Parser.possible_params
@@ -40,10 +40,10 @@ Cortecx returns the processed text according to your params in easy to read and 
 
 Example:
 ```python
-import cortecx.constrcution.session as session
-from cortecx.constrcution.materials import Parser
+import cortecx.construction.cxsession as cxsession
+from cortecx.construction.materials import Parser
 
-session.Session().start()
+cxsession.Session().start()
 
 parser = Parser()
 parser.include('chunks')  # 'chunks' parameter will extract noun chunks
@@ -59,18 +59,18 @@ Response:
 >>> answer
 
 {'analysis': [{'jimmy': {'chunk': 'B-NP', 'pos': 'NNP'}},
-              {'went': {'chunk': 'B-VP', 'pos': 'VBD'}},
-              {'to': {'chunk': 'B-PP', 'pos': 'TO'}},
-              {'the': {'chunk': 'B-NP', 'pos': 'DT'}},
-              {'mall': {'chunk': 'I-NP', 'pos': 'NN'}},
-              {'.': {'chunk': 'O', 'pos': '.'}}]}
+{'went': {'chunk': 'B-VP', 'pos': 'VBD'}},
+{'to': {'chunk': 'B-PP', 'pos': 'TO'}},
+{'the': {'chunk': 'B-NP', 'pos': 'DT'}},
+{'mall': {'chunk': 'I-NP', 'pos': 'NN'}},
+{'.': {'chunk': 'O', 'pos': '.'}}]}
 
 ```
 
 Use the HELP class found in
 
 ```python
-import cortecx.constrcution.tools as t
+import cortecx.construction.tools as t
 
 print(t.HELP().pos_codes)  # codes for the part of speech tags
 print(t.HELP().chunk_codes)  # codes for the chunk tags
