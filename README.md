@@ -2,6 +2,8 @@
 
 Cortecx is a Python NLP library facilitating the implementation of common NLP tasks.
 
+[Official Site](https://www.cerybra.com/#cortecx)
+
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Cortecx.
