@@ -6,6 +6,8 @@ import cortecx.construction.cxsession as cxsession
 
 
 class DataObj:
+    
+    __slots__ = ['data', 'depth', 'dim']
 
     def __init__(self):
         self.data = None
@@ -166,6 +168,8 @@ class DataObj:
 
 
 class Word:
+    
+    __slots__ = ['word']
 
     def __init__(self, word: str):
         self.word = word.lower()
@@ -254,6 +258,8 @@ class Word:
 
 
 class TextObj:
+    
+    __slots__ = ['text']
 
     def __init__(self, text):
         self.text = text
