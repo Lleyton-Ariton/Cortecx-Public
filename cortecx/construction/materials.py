@@ -28,6 +28,8 @@ class Parser(Word):
         'synonyms',
         'is_stop'
     ]
+    
+    __slots__ = ['text', 'params', 'processed', 'all']
 
     def __init__(self, as_type='dictionary'):
         super(Word, self).__init__()
@@ -222,6 +224,8 @@ class Parser(Word):
 
 
 class Encoder(Tokenizer):
+    
+    __slots__ = ['data', 'encode_type', 'token_map', 'transformed_data', 'kwargs']
 
     def __init__(self, data, **kwargs):
         super(Tokenizer, self).__init__()
@@ -337,6 +341,8 @@ class Encoder(Tokenizer):
 
 
 class Read(TextObj):
+    
+    __slots__ = ['text']
 
     def __init__(self, text: TextObj):
         super(TextObj, self).__init__()
